@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Stays - Book Your Perfect Room</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">Luxury<span>Stays</span></a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Experience Luxury Like Never Before</h1>
+            <p>Discover our exquisite collection of rooms and suites, each designed to provide the ultimate comfort and relaxation for your stay.</p>
+            <a href="#rooms" class="btn">Explore Rooms</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <form class="booking-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="check-in">Check In</label>
+                    <input type="date" id="check-in" required>
+                </div>
+                <div class="form-group">
+                    <label for="check-out">Check Out</label>
+                    <input type="date" id="check-out" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Guests</label>
+                    <select id="guests" required>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5+">5+ Guests</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="room-type">Room Type</label>
+                    <select id="room-type" required>
+                        <option value="all">All Rooms</option>
+                        <option value="standard">Standard</option>
+                        <option value="deluxe">Deluxe</option>
+                        <option value="suite">Suite</option>
+                        <option value="executive">Executive Suite</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-block">Check Availability</button>
+        </form>
+    </div>
+
+    <section class="rooms" id="rooms">
+        <div class="container">
+            <h2 class="section-title">Our Rooms & Suites</h2>
+            
+            <div class="room-grid">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Standard Room" class="room-img">
+                    <div class="room-content">
+                        <h3 class="room-title">Standard Room</h3>
+                        <p class="room-price">$149 <span>/ night</span></p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> 1 Queen Bed</li>
+                            <li><i class="fas fa-user-friends"></i> 2 Guests</li>
+                            <li><i class="fas fa-ruler-combined"></i> 320 sq.ft.</li>
+                            <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                        </ul>
+                        <button class="btn book-btn" data-room="Standard Room">Book Now</button>
+                    </div>
+                </div>
+                
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Deluxe Room" class="room-img">
+                    <div class="room-content">
+                        <h3 class="room-title">Deluxe Room</h3>
+                        <p class="room-price">$199 <span>/ night</span></p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> 1 King Bed</li>
+                            <li><i class="fas fa-user-friends"></i> 2 Guests</li>
+                            <li><i class="fas fa-ruler-combined"></i> 400 sq.ft.</li>
+                            <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                            <li><i class="fas fa-coffee"></i> Coffee Maker</li>
+                        </ul>
+                        <button class="btn book-btn" data-room="Deluxe Room">Book Now</button>
+                    </div>
+                </div>
+                
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Executive Suite" class="room-img">
+                    <div class="room-content">
+                        <h3 class="room-title">Executive Suite</h3>
+                        <p class="room-price">$299 <span>/ night</span></p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-bed"></i> 1 King Bed + Sofa Bed</li>
+                            <li><i class="fas fa-user-friends"></i> 4 Guests</li>
+                            <li><i class="fas fa-ruler-combined"></i> 650 sq.ft.</li>
+                            <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                            <li><i class="fas fa-tv"></i> Smart TV</li>
+                            <li><i class="fas fa-coffee"></i> Mini Bar</li>
+                        </ul>
+                        <button class="btn book-btn" data-room="Executive Suite">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="amenities" id="amenities">
+        <div class="container">
+            <h2 class="section-title">Hotel Amenities</h2>
+            <div class="amenities-grid">
+                <!-- Amenities would go here -->
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>LuxuryStays</h3>
+                    <p>Providing exceptional hospitality and unforgettable experiences since 2005.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@luxurystays.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 LuxuryStays. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h3 class="modal-title">Book <span id="modalRoomName"></span></h3>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="modal-check-in">Check In</label>
+                    <input type="date" id="modal-check-in" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-check-out">Check Out</label>
+                    <input type="date" id="modal-check-out" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-guests">Guests</label>
+                    <select id="modal-guests" required>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modal-name">Full Name</label>
+                    <input type="text" id="modal-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-email">Email</label>
+                    <input type="email" id="modal-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-phone">Phone Number</label>
+                    <input type="tel" id="modal-phone" required>
+                </div>
+                <button type="submit" class="btn btn-block">Complete Booking</button>
+            </form>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
